@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventLitez</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>EventLitez</h1>
+      <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+    <main>
+      <section class="form-section">
+        <h2>Create an Event</h2>
+        <form id="eventForm">
+          <label for="eventName">Event Name:</label>
+          <input type="text" id="eventName" required>
+          
+          <label for="eventDate">Date:</label>
+          <input type="date" id="eventDate" required>
+          
+          <label for="eventTime">Time:</label>
+          <input type="time" id="eventTime" required>
+          
+          <label for="eventLocation">Location:</label>
+          <input type="text" id="eventLocation" required>
+          
+          <label for="eventCategory">Category:</label>
+          <select id="eventCategory" required>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Party">Party</option>
+            <option value="Other">Other</option>
+          </select>
+          
+          <button type="submit">Add Event</button>
+        </form>
+      </section>
+      
+      <section class="list-section">
+        <h2>Upcoming Events</h2>
+        <input type="text" id="searchBar" placeholder="Search events...">
+        <p id="eventCounter">Total Events: 0</p>
+        <ul id="eventList"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
